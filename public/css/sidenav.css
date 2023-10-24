@@ -1,0 +1,143 @@
+/* ----- FONT ----- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,600;1,400&family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
+/* ----- ICON ----- */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+    --backgroundColor: #F1DEC9;
+    --backgroundSidenav: #A4907C;
+    --backgroundButton: #B5A392;
+    --iconColorWhite: white;
+    --iconColorBlack: black;
+    --iconColorDirtyWhite: rgb(245, 238, 238);
+    --font: 'Montserrat', sans-serif;
+}
+
+* {
+    background-color: var(--backgroundColor);
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: var(--backgroundSidenav);
+    /* z-index: 1; */
+}
+
+.logo {
+    background-color: var(--backgroundSidenav);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+}
+
+.img_logo {
+    background-color: var(--backgroundSidenav);
+    width: 160px;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundSidenav);
+}
+
+.menu {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    width: 100%;
+
+    background-color: var(--backgroundSidenav);
+}
+
+.item {
+    position: relative;
+    background-color: var(--backgroundButton);
+    margin-top: 8px;
+}
+
+.item_name {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--backgroundButton);
+    padding-left: 10px;
+}
+
+.menu_icon {
+    background-color: var(--backgroundButton);
+    color: var(--iconColorWhite);
+    font-size: 28px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.menu_name {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--iconColorWhite);
+    background-color: var(--backgroundButton);
+}
+
+/* ------------------------------------------------------------ */
+
+/* Initial state of dropdowns */
+.dropdown_content {
+    display: none;
+    width: 100%;
+}
+
+/* Style the dropdown when it's open */
+.dropdown_content.active {
+    display: block;
+}
+
+/* Add styles to make it look like a dropdown menu */
+.dropdown_content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Add hover effect */
+.dropdown_content a:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+.content_here {
+    position: absolute;
+    top: 50px; /* Adjust this value based on your header's height */
+    left: 250px; /* Width of your side navigation */
+    background-color: var(--backgroundColor); /* Set your desired background color */
+    width: calc(100% - 250px); /* Make the content area take up the remaining width */
+    height: calc(100% - 50px); /* Make the content area take up the remaining height after considering the header */
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't expand the element's size */
+    z-index: -1;
+}

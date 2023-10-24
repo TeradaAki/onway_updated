@@ -1,0 +1,111 @@
+/* ----- FONT ----- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,600;1,400&family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
+/* ----- ICON ----- */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+    --backgroundHeader: #C8B6A6;
+    --backgroundColor: #F1DEC9;
+    --greenBtn: green;
+    --lightGreen: rgb(72, 184, 72);
+    --redBtn: red;
+    --backgroundSidenav: #A4907C;
+    --backgroundButton: #B5A392;
+    --iconColorWhite: white;
+    --iconColorBlack: black;
+    --iconColorDirtyWhite: rgb(245, 238, 238);
+    --font: 'Montserrat', sans-serif;
+}
+
+* {
+    /* background-color: var(--backgroundColor); */
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+.list_table {
+    position: relative;
+    margin: 40px;
+    background-color: var(--backgroundHeader);
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 15px;
+}
+
+.list_header {
+    background-color: var(--backgroundHeader);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    position: relative;
+    background-color: var(--backgroundHeader);
+}
+
+.edit_form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    /* height: 400px; */
+    background-color: navajowhite;
+}
+
+.entire_form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.div1,
+.div2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: auto; /* Add this to enable scrolling if content exceeds max height */
+}
+
+.left_input,
+.right_input {
+    padding: 35px;
+}
+
+.edit_input {
+    border: 1px thin black;
+    width: 100%;
+    padding: 10px;
+}
+
+.save_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: lightblue; */
+}
+
+.submit_btn {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--greenBtn);
+    border: 0;
+    color: var(--iconColorWhite);
+}
+
+.submit_btn:hover {
+    background-color: var(--lightGreen);
+}
+
+
